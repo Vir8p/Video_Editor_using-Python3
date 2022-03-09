@@ -5,15 +5,12 @@ import moviepy.audio.fx.all as afx
 import gtts
 import os
 
-f=pd.read_csv('Moviepy Practice\clip_detail.csv')
+f=pd.read_csv('clip_detail.csv')
 no_of_clips = f.shape[0]
 
-au=pd.read_csv('Moviepy Practice/text2speech.csv')
+au=pd.read_csv('text2speech.csv')
 #print(au)
 
-#fac=open('Moviepy Practice/Audioscalefactor.txt','r')
-#  
-#
 Original_Audio_Scale_factor = 0.09
 Speech_Audio_Scale_factor   = 0.1
 
@@ -60,7 +57,7 @@ final_aud = CompositeAudioClip(audio_clips)
 #final_aud.write_audiofile(f"Moviepy_Practice/final_audio.mp3",fps=44100)
 
 finalclip=finalclip.set_audio(final_aud)
-finalclip.write_videofile('Moviepy_practice\zzfinal1.mp4')
+finalclip.write_videofile('Output_Video.mp4')
 
 for j in range( no_of_spl ):
     os.remove(f"Moviepy_Practice/txt_speech_{j+1}.mp3")
