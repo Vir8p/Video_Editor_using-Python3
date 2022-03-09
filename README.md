@@ -7,5 +7,9 @@ I use different libraries to made this program.
 - [ ] OS
 - [ ] Math
 
-In this Program we have to save all three files in the same directory that is main.py , clip_detail.csv , text2speech.csv
+In this Program we have to save all three files in the same directory that is 
+1.  main.py 
+2.  clip_detail.csv 
+3.  text2speech.csv
 
+Then we feed details like directory of Video File want to edit with those clip timing in [ clip_detail.csv ].
