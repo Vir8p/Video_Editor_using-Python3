@@ -6,3 +6,6 @@ I use different libraries to made this program.
 - [ ] Pandas
 - [ ] OS
 - [ ] Math
+
+In this Program we have to save all three files in the same directory that is main.py , clip_detail.csv , text2speech.csv
+
